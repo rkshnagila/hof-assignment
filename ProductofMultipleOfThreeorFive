@@ -1,0 +1,12 @@
+function sumDivisibleBy3Or5(numbers) {
+  return numbers.reduce((sum, number) => {
+    if (number % 3 === 0 || number % 5 === 0) {
+      return sum + number;
+    }
+    return sum; // Otherwise, keep the current sum
+  }, 0);
+}
+
+const numbers = [7, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597];
+
+console.log(sumDivisibleBy3Or5(numbers));
