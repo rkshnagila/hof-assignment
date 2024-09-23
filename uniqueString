@@ -1,0 +1,17 @@
+function miqueString(strings) {
+  return strings.reduce((acc, string) => {
+    acc[string] = (acc[string] || 0) + 1; 
+  }, {});
+}
+
+const strings = [
+  "apple",
+  "banana",
+  "apple",
+  "orange",
+  "banana",
+  "pear",
+  "apple",
+];
+
+console.log(miqueString(strings));
