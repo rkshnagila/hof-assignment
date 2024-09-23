@@ -1,0 +1,10 @@
+function sumOfSquaresOfOddNumbers(numbers) {
+  return numbers
+    .filter(number => number % 2 !== 0) 
+    .map(oddNumber => oddNumber ** 2)   
+    .reduce((sum, square) => sum + square, 0);
+}
+
+const numbers = [1, 2, 3, 4, 5, 7];
+
+console.log(sumOfSquaresOfOddNumbers(numbers));
