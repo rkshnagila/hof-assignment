@@ -1,0 +1,20 @@
+function findPalindromes(words) {
+  return words.filter(word => {
+    
+    return word === word.split('').reverse().join('');
+  });
+}
+
+const words = [
+  "racecar",
+  "hello",
+  "deified",
+  "world",
+  "level",
+  "programming",
+  "radar",
+  "civic",
+  "javascript",
+];
+
+console.log(findPalindromes(words));
