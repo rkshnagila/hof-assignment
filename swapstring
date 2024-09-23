@@ -1,0 +1,23 @@
+function swapFirstAndLast(strings) {
+  return strings.map(str => {
+    if (str.length > 1) {
+      
+      return str[str.length - 1] + str.slice(1, -1) + str[0];
+    }
+    return str;
+  });
+}
+
+const strings = [
+  "Hello",
+  "world",
+  "this",
+  "is",
+  "an",
+  "example",
+  "array",
+  "of",
+  "strings",
+];
+
+console.log(swapFirstAndLast(strings));
